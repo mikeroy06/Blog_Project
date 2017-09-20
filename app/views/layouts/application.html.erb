@@ -11,6 +11,13 @@
   <body>
     <div class="container">
     <%= yield %>
+    <div class="pull-right">
+    <% if user_signed_in? %>
+      <li>Welcome <%= current_user.email %></li>
+      <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-primary" %>
+      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %></li>
+
+    <% end %>
   </div>
   </body>
 </html>

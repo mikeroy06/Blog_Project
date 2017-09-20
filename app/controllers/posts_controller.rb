@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.page(params[:page])
   end
 
   # GET /posts/1
@@ -62,6 +62,13 @@ class PostsController < ApplicationController
     end
   end
 
+  def user_posts
+    @user = User.find_by(username: params[:name])
+
+
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -70,6 +77,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :author, :blog_entry)
+      params.require(:post).permit(:title, :author, :blog_entry, :user_id)
     end
 end
