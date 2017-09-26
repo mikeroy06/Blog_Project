@@ -17,4 +17,88 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
+ body{
+	background: #cbcab6;
+
+}
+
+.panel-primary{
+
+	border-color: #d2a2ae;
+
+}
+.panel-primary .panel-heading {
+	text-align: center;
+	font-family: 'Reenie Beanie', cursive;
+	background-color: #d2a2ae;
+	border-color: #d2a2ae;
+
+}
+
+h1{
+font-family: 'Reenie Beanie', cursive;
+
+}
+.panel-body{
+	background-color: #ededed;
+}
+
+.btn-primary, .btn-primary:hover{
+	background: #a39480;
+	border-color: #a39480;
+}
+
+.btn-warning, .btn-warning:hover{
+
+	background:#d2a223;
+	border-color: #d2a2ae;
+
+}
+
+.btn-danger, .btn-danger:hover{
+
+	background: #a5435c;
+	border-color: #a5435c;
+}
+
+
+.navbar-default{
+	background-color: #d2a2ae;
+	border-color: #d2a2ae;
+	color: #514A40;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 30px;
+
+
+
+}
+
+.index-container{
+	margin-top: 100px;
+}
+
+.title-pic{
+width: 75px;
+height: auto;
+
+
+}
+
+.comment-header{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 20px;
+
+}
+
+.beanie{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 30px;
+
+}
+
+.well{
+	background: #ededed;
+
+}
+
  
